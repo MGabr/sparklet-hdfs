@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv sh
+
+/usr/sbin/sshd
+/opt/hadoop-2.6.5/bin/hdfs namenode -format
+/opt/hadoop-2.6.5/sbin/start-dfs.sh
