@@ -19,4 +19,11 @@ If you want to pass arguments to `spark-shell`:
 $ docker run -it mgabr/sparklet-hdfs spark-shell --packages software.uncharted.sparkpipe:sparkpipe-core:1.1.0
 ```
 
+There is also a version of this container with sbt and running `sbt` by default.
+
+```bash
+$ docker build -t mgabr/sparklet-hdfs-sbt -f Dockerfile-sbt .
+$ docker run -p 8080:8080 -p 50070:50070 -it mgabr/sparklet-hdfs-sbt
+```
+
 It takes some time to start up, so consider using `sleep 30` when using it in scripts right away.

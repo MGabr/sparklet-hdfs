@@ -3,7 +3,7 @@
 # Apache Spark 2.3.0, Hadoop 2.6
 #
 # Runs a super-tiny, Spark standalone cluster and a pseudo distributed Hadoop cluster in a container
-# Suitable for building test/development containers for spark apps interacting with HDFS
+# Suitable for building test/development containers for Spark apps interacting with HDFS
 #
 # Takes some time to start HDFS, in scripts you can use sleep 30
 #
