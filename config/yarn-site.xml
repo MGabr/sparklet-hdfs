@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- configuration for yarn in pseudo-distributed mode -->
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+
+    <!-- custom resource limitations -->
+    <property>
+        <name>yarn.scheduler.maximum-allocation-mb</name>
+        <value>5012</value>
+    </property>
+    <property>
+        <name>yarn.scheduler.maximum-allocation-vcores</name>
+        <value>5</value>
+    </property>
+
+    <property>
+        <name>yarn.resourcemanager.hostname</name>
+        <value>localhost</value>
+    </property>
+
+    <!-- solve problems occuring with java 8, spark on yarn [YARN-4714] -->
+    <property>
+        <name>yarn.nodemanager.pmem-check-enabled</name>
+        <value>false</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.vmem-check-enabled</name>
+        <value>false</value>
+    </property>
+</configuration>
