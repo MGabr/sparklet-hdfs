@@ -1,5 +1,5 @@
 # Sparklet-HDFS
-> A small Spark cluster, running in standalone mode or on YARN and a Hadoop cluster, running in pseudo distributed mode. 
+> A small Spark cluster, running in standalone mode or on a pseudo distributed YARN cluster, both with HDFS. 
 Suitable for testing and development.
 
 > [Sparklet](https://github.com/unchartedsoftware/sparklet) extended to support YARN and HDFS
