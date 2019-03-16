@@ -19,7 +19,7 @@ If you want to pass arguments to `spark-shell`:
 $ docker run -it mgabr/sparklet-hdfs spark-shell --packages software.uncharted.sparkpipe:sparkpipe-core:1.1.0
 ```
 
-There is also a version of this container which runs Spark on a slightly bigger pseudo-distributed YARN cluster.
+There is also a version of this container which runs Spark on a pseudo-distributed YARN cluster.
 
 ```bash
 $ docker build -t mgabr/sparklet-yarn .

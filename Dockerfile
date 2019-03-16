@@ -2,7 +2,7 @@
 # Spark and Hadoop Standalone Container
 # Apache Spark 2.3.0, Hadoop 2.6
 #
-# Runs a super-tiny, Spark standalone cluster and a pseudo distributed Hadoop cluster in a container
+# Runs a small Spark standalone cluster and a pseudo distributed Hadoop cluster in a container
 # Suitable for building test/development containers for Spark apps interacting with HDFS
 #
 # Takes some time to start HDFS, in scripts you can use sleep 30
@@ -38,6 +38,8 @@ RUN echo "export JAVA_HOME="$JAVA_HOME >> /opt/hadoop-2.6.5/etc/hadoop/hadoop-en
 
 # upload init scripts
 ADD services/hadoop-init /etc/cont-init.d/hadoop
+ADD services/spark-slave3-run /etc/services.d/spark-slave3/run
+ADD services/spark-slave4-run /etc/services.d/spark-slave4/run
 
 ENV HADOOP_CONF_DIR /opt/hadoop-2.6.5/etc/hadoop
 ENV PATH /opt/hadoop-2.6.5/bin:/opt/hadoop-2.6.5/sbin:$PATH
