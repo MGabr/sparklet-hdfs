@@ -1,6 +1,6 @@
 #
 # Spark and Hadoop Standalone Container with sbt
-# Apache Spark 2.4.4, Hadoop 2.7, sbt 1.2.8
+# Apache Spark 2.4.4, Hadoop 2.6, sbt 1.2.8
 #
 # Runs a small Spark standalone cluster and a pseudo distributed Hadoop cluster in a container
 # Suitable for building test/development containers for Spark apps interacting with HDFS
